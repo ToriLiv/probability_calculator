@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <!-----------------responsive---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probability Calculator</title>
+    <!------------------styles css----------------->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section id="grid">
+      <div class="signin">
+        <div class="content">
+          <h2>Distribucion binomial</h2>
+          <div class="form">
+            <!-------------------------entradas del usuario------------------->
+            <h3>Experimentos Aleatorios:</h3>
+            <div class="inputBox">
+              <input type="number" inputmode="numeric" id="N" required />
+              <i>N</i>
+            </div>
+            <h3>Casos de Éxito:</h3>
+            <div class="inputBox">
+              <input type="number" inputmode="numeric" id="X" required />
+              <i>X</i>
+            </div>
+            <h3>Probabilidad:</h3>
+            <div class="inputBox">
+              <input type="number" inputmode="numeric" id="P" required />
+              <i>P</i>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="CALCULAR" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------generar cuadros del fondo :)---------------->
+    <script>
+      const section = document.getElementById("grid");
+      const total = 400;
+      for (let i = 0; i < total; i++) {
+        const span = document.createElement("span");
+        section.appendChild(span);
+      }
+    </script>
+
+    <!-------------------------scripts js----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
