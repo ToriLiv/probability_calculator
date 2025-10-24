@@ -85,6 +85,6 @@ submitBtn.addEventListener("click", (e) => {
   //--------------mostrar resultado en pantalla----------------
   Swal.fire({
     title: "Resultado",
-    text: `P(X=${x}) = ${result.toFixed(10)}% = ${(result * 100).toFixed(6)}%`,
+    text: `P(X=${x}) = ${(result * 100).toFixed(4)}%`,
   });
 });
